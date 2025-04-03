@@ -5,7 +5,7 @@
 import fastapi
 import json
 import random
-
+import uvicorn
 class Places:
     def __init__(
             self,
