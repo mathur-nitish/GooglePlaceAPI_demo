@@ -51,5 +51,5 @@ def get_nearby_restaurants(start_location:str, end_location:str, num_restaurants
     response = [restaurant.__dict__ for restaurant in nearby_restaurants]
     return response
 
-if __name__== "__main__":
-        uvicorn.run(googlePlaceAPI,host="0.0.0.0",port=8070)
+#if __name__== "__main__":
+#       uvicorn.run(googlePlaceAPI,host="0.0.0.0",port=8070)
