@@ -27,7 +27,6 @@ def generate_nearby_restaurants(num_restaurants, start_location, end_location):
     for _ in range(num_restaurants):
         # Synthetic data generation
         name = f"Restaurant {_ + 1}"
-    
         deliveryOptions = random.choices(['Take-away', 'Dine-in', None], k=random.randint(1, 2))
         goodForChildren = random.choice([True, False, None])
         paymentOptions = random.choices(['Digital-Payment', 'Cash', 'Card', None], k=random.randint(1, 2))
@@ -51,3 +50,6 @@ def get_nearby_restaurants(start_location:str, end_location:str, num_restaurants
     
     response = [restaurant.__dict__ for restaurant in nearby_restaurants]
     return response
+
+if __name__=="__main__":
+        uvicorn.run(googlePlaceAPI,host="0.0.0.0",port=8070)
