@@ -78,5 +78,4 @@ jobs:
         with:
           app-name: 'tempAPI'
           slot-name: 'Production'
-          startup-command: "uvicorn GooglePlaceAPI:googlePlaceAPI --port 8070 # Important!
-          
+          startup-command: "uvicorn GooglePlaceAPI:googlePlaceAPI --port 8070"          
